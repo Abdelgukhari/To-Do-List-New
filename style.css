@@ -1,0 +1,107 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #ff5c5c 50%, #ffffff 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.app {
+  width: min(95vw, 500px);
+  background: #ffffff;
+  border-radius: 1em;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.container {
+  padding: 30px 40px;
+  background-color: #ffe5e5;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 0.8em;
+}
+
+#wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#wrapper input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ff5c5c;
+  border-radius: 0.5em;
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+#wrapper button {
+  padding: 10px 20px;
+  background: #ff5c5c;
+  color: #fff;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#wrapper button:hover {
+  background: #e04a4a;
+}
+
+#tasks {
+  margin-top: 20px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #fff;
+  border: 2px solid #ff5c5c;
+  border-radius: 0.5em;
+  margin-bottom: 10px;
+}
+
+.task .taskname {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.task button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ff5c5c;
+  font-size: 1.2em;
+  margin-left: 10px;
+}
+
+.task button:hover {
+  color: #e04a4a;
+}
+
+#pending-tasks {
+  font-size: 1.2em;
+  color: #333;
+}
+
+#error {
+  color: red;
+  display: none;
+  margin-top: 10px;
+  text-align: center;
+}
